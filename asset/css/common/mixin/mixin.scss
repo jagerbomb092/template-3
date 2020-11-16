@@ -1,0 +1,12 @@
+@mixin height($height:auto) {
+    height: $height;
+    width: 100%;
+}
+@mixin sans($kg:700) {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: $kg;
+}
+@mixin no-sans($kg:400) {
+    font-family: 'Merriweather', serif;
+    font-weight: $kg;
+}

@@ -1,0 +1,11 @@
+.footer {
+    padding: 48px 0;
+    text-align: center;
+    @include height(auto);
+    background-color: #f8f9fa;
+    &-title {
+      color: $text-1;
+      font-size: 13px;
+      @include no-sans(400);
+    }
+  }

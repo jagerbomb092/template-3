@@ -1,0 +1,43 @@
+.about {
+    background-color: $bg-1;
+    padding: $margin-tb;
+    text-align: center;
+    @include height(auto);
+    &-title {
+      @include sans(500);
+      font-size: 32px;
+      margin: auto;
+      color: #fff;
+    }
+    &-line {
+      border-width: 3.2px;
+      max-width: 52px;
+      border: 2px solid #fff;
+      margin: auto;
+      margin-bottom: 24px;
+      margin-top: 24px;
+    }
+    &-info {
+      color: $info;
+      font-size: 16px;
+      @include no-sans(400);
+      width: 66%;
+      margin: auto;
+      margin-bottom: 48px;
+    }
+    &-btn {
+      padding: 20px 36px;
+      background-color: $bg-1;
+      color: #fff;
+      @include sans(700);
+      font-size: 14px;
+      border-radius: 160px;
+      background-color: #fff;
+      color: $black;
+    }
+    @media screen and (max-width: 991px) {
+      &-info {
+        width: 100%;
+      }
+    }
+  }

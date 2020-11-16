@@ -1,0 +1,98 @@
+.portfolio {
+    text-align: center;
+    @include height(auto);
+    &-control {
+      position: relative;
+      @include height(100%);
+      &__hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        @include height(100%);
+        background-color: $bg-1;
+        color: #fff;
+        @include display(center);
+        flex-direction: column;
+        opacity: 0;
+        & h1 {
+          @include sans(600);
+          font-size: 14px;
+          color: $info;
+        }
+        & p {
+          @include no-sans(400);
+          font-size: 19px;
+        }
+        &:hover {
+          opacity: 0.9;
+          transition: 0.3s;
+          cursor: pointer;
+        }
+      }
+    }
+    &-modal {
+      @include height(100%);
+      background: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1500;
+      overflow: hidden;
+      max-height: 0;
+      @include display(center);
+      max-width: 100%;
+      &.active {
+        max-height: 100%;
+      }
+  
+      & .btn-modal {
+        color: #fff;
+        font-size: 50px;
+        position: absolute;
+        z-index: 1700;
+      }
+      & .triangle-2 {
+        width: 30px;
+        height: 15px;
+        border-right: solid 20px #fff;
+        border-bottom: solid 15px transparent;
+        border-top: solid 15px transparent;
+        opacity: 0.6;
+      }
+      & .triangle-3 {
+        width: 30px;
+        height: 15px;
+        border-left: solid 20px #fff;
+        border-bottom: solid 15px transparent;
+        border-top: solid 15px transparent;
+        opacity: 0.6;
+      }
+      & .previous {
+        top: 50%;
+        left: 30px;
+        margin-top: -15px;
+      }
+      & .next {
+        top: 50%;
+        right: 30px;
+        margin-top: -15px;
+      }
+      &__center{
+        z-index: 1600;
+        & .close__btn {
+          width: 100%;
+          text-align: right;
+          color: $info;
+          margin-bottom: 12px;
+        }
+        & .number__img {
+          color: $info;
+          text-align: right;
+          font-size: 18px;
+        }
+      }
+      
+    }
+  }

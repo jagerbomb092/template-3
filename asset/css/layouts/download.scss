@@ -1,0 +1,24 @@
+.download {
+    padding: $margin-tb;
+    text-align: center;
+    @include height(auto);
+    background-color: $bg-2;
+    &-title {
+      @include sans(500);
+      font-size: 32px;
+      margin: auto;
+      color: #fff;
+      margin-bottom: 24px;
+    }
+    &-btn {
+      padding: 20px 36px;
+      background-color: $bg-1;
+      color: #fff;
+      @include sans(700);
+      font-size: 14px;
+      border-radius: 160px;
+      background-color: #fff;
+      color: $black;
+      display: inline-block;
+    }
+  }

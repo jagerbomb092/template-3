@@ -1,0 +1,35 @@
+.service {
+    padding: $margin-tb;
+    text-align: center;
+    @include height(auto);
+    &-title {
+      @include sans(500);
+      font-size: 32px;
+      margin: auto;
+      color: $black;
+    }
+    &-line {
+      border-width: 3.2px;
+      max-width: 52px;
+      border: 2px solid $bg-1;
+      margin: 24px auto;
+    }
+    & .item-control {
+      margin-top: 48px;
+      & i {
+        color: $bg-1;
+        font-size: 64px;
+      }
+      & h2 {
+        margin-top: 24px;
+        margin-bottom: 8px;
+        @include sans(500);
+        font-size: 24px;
+      }
+      & p {
+        font-size: 16px;
+        @include no-sans(400);
+        color: $text-1;
+      }
+    }
+  }
